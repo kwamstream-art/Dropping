@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dropping · Same-day delivery in Accra</title>
+    <meta name="description" content="Dropping is a same-day parcel delivery service for businesses in Accra. Get a price, pay with Mobile Money and follow each parcel on a map." />
+    <meta name="theme-color" content="#0f3a9e" />
+    <link rel="icon" type="image/png" href="assets/favicon-64.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="brand" href="#top" aria-label="Dropping home">
+          <img class="mark" src="assets/icon.png" width="55" height="55" alt="" />
+          Dropping
+        </a>
+        <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav id="nav" class="nav" aria-label="Main">
+          <a href="#price">Get a price</a>
+          <a href="#how">How it works</a>
+          <a href="#models">Services</a>
+          <a href="#coverage">Where we deliver</a>
+          <a href="#couriers">Couriers</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn-cta" href="#contact">Register your business</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="eyebrow">Accra pilot · same-day delivery</p>
+            <h1>Your business. Delivered across Accra.</h1>
+            <p class="lead">Local parcel delivery for shops and small businesses. Get a price, pay with Mobile Money and follow every parcel on a map.</p>
+            <div class="actions">
+              <a class="btn btn-cta" href="#price">Get a price</a>
+              <a class="btn btn-ghost" href="#contact">Register your business</a>
+            </div>
+            <p class="small note">Same-day pickups are booked before <strong data-cutoff>15:00</strong>. Delivery times are estimates, not promises.</p>
+          </div>
+          <div class="hero-card" aria-hidden="true">
+            <div class="route">
+              <span class="stop start"></span>
+              <span class="line"></span>
+              <span class="stop end"></span>
+            </div>
+            <div class="chips">
+              <span>Osu</span><span>Labone</span><span>East Legon</span>
+            </div>
+            <div class="mock-price"><small>Example</small><strong>Osu → East Legon</strong><span data-example>GH₵ 31</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Price estimator -->
+      <section class="section" id="price" aria-labelledby="price-h">
+        <div class="wrap">
+          <h2 id="price-h">See your price before you book</h2>
+          <p class="section-lead">Choose the areas and the parcel size. The price below includes every charge for that delivery.</p>
+          <div class="calc">
+            <form id="calc" class="calc-form" novalidate>
+              <div class="fld"><label for="from">Pickup area</label><select id="from"></select></div>
+              <div class="fld"><label for="to">Delivery area</label><select id="to"></select></div>
+              <fieldset class="sizes">
+                <legend>Parcel size</legend>
+                <div id="sizes"></div>
+              </fieldset>
+              <label class="check"><input type="checkbox" id="fragile" /><span>Fragile or special handling <span class="muted" id="fragile-fee"></span></span></label>
+            </form>
+            <div class="calc-out" aria-live="polite">
+              <p class="small muted">Your price</p>
+              <p class="total" id="total">GH₵ 0</p>
+              <ul class="lines" id="lines"></ul>
+              <p class="small muted" id="calc-note">An estimate for the pilot. The final price is shown before you confirm a booking.</p>
+              <a class="btn btn-cta btn-block" href="#contact">Register to book</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section alt" id="how" aria-labelledby="how-h">
+        <div class="wrap">
+          <h2 id="how-h">How it works</h2>
+          <ol class="steps">
+            <li><span class="num" aria-hidden="true">1</span><h3>Book</h3><p>Enter the pickup and drop-off, the parcel details and a pickup time. You see the price first.</p></li>
+            <li><span class="num" aria-hidden="true">2</span><h3>Pay with Mobile Money</h3><p>Approve a prompt on your phone: MTN MoMo, Telecel Cash or AirtelTigo Money. Every payment goes to Dropping, never to the courier.</p></li>
+            <li><span class="num" aria-hidden="true">3</span><h3>Track and confirm</h3><p>Your recipient gets a tracking link with a live map and confirms when the parcel arrives.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Business models -->
+      <section class="section" id="models" aria-labelledby="svc-h">
+        <div class="wrap">
+          <h2 id="svc-h">Six ways Dropping moves your business</h2>
+          <p class="section-lead">One platform, one account. Deliveries are open in the Accra pilot. Rides and Cargo are planned and are not available yet.</p>
+          <ul class="models">
+            <li class="model live">
+              <div class="model-head"><span class="tag">Open in the pilot</span><h3>Deliveries</h3></div>
+              <p>Same-day parcels and business orders inside Accra.</p>
+              <dl>
+                <div><dt>For</dt><dd>Shops, boutiques and small businesses sending to customers.</dd></div>
+                <div><dt>How it earns</dt><dd>A per-delivery price by parcel size and distance. Every payment goes to Dropping first, then the courier is paid.</dd></div>
+                <div><dt>Price</dt><dd>From <span data-from-price>GH₵ 20</span>. See the calculator above.</dd></div>
+              </dl>
+            </li>
+            <li class="model">
+              <div class="model-head"><span class="tag soon">Planned · not available yet</span><h3>Food</h3></div>
+              <p>Meals from local restaurants and kitchens, delivered to the customer’s door.</p>
+              <dl>
+                <div><dt>For</dt><dd>Restaurants and kitchens that want delivery, and the people who order from them.</dd></div>
+                <div><dt>How it would earn</dt><dd>A delivery fee per order. Whether restaurants would also pay a commission has not been decided. Payment goes to Dropping first, then the courier is paid.</dd></div>
+                <div><dt>Price</dt><dd>Not set. The delivery fee would be shown before you order.</dd></div>
+              </dl>
+              <p class="small muted">Needs partner restaurants, food-safety and hygiene rules, insulated bags and a policy for late or spoiled orders before launch. Our current delivery rules do not allow perishable food. No date is set.</p>
+              <a class="btn btn-outline" href="#contact" data-interest="food">Tell us you are interested</a>
+            </li>
+            <li class="model">
+              <div class="model-head"><span class="tag soon">Planned · not available yet</span><h3>Rides</h3></div>
+              <p>Chartered taxis, point to point, booked in the same app.</p>
+              <dl>
+                <div><dt>For</dt><dd>People and staff who need a booked car between two places in Accra.</dd></div>
+                <div><dt>How it would earn</dt><dd>A fare per ride, with Dropping keeping a share and the driver paid out to Mobile Money.</dd></div>
+                <div><dt>Price</dt><dd>Not set. It will be shown before you book, as with deliveries.</dd></div>
+              </dl>
+              <p class="small muted">Needs transport licensing, driver checks and safety rules before launch. No date is set.</p>
+              <a class="btn btn-outline" href="#contact" data-interest="rides">Tell us you are interested</a>
+            </li>
+            <li class="model">
+              <div class="model-head"><span class="tag soon">Planned · not available yet</span><h3>Cargo</h3></div>
+              <p>Larger goods and business transport that do not fit a courier’s bag.</p>
+              <dl>
+                <div><dt>For</dt><dd>Businesses moving stock, furniture or bulk orders.</dd></div>
+                <div><dt>How it would earn</dt><dd>A quoted price per job by load and distance, paid to Dropping before the driver is paid.</dd></div>
+                <div><dt>Price</dt><dd>Not set. A quote would be shown before you confirm.</dd></div>
+              </dl>
+              <p class="small muted">Needs vehicle, insurance and licensing checks before launch. No date is set.</p>
+              <a class="btn btn-outline" href="#contact" data-interest="cargo">Tell us you are interested</a>
+            </li>
+            <li class="model">
+              <div class="model-head"><span class="tag soon">Planned · not available yet</span><h3>Moving</h3></div>
+              <p>House and office moves: a vehicle and helpers to carry your belongings from one place to another.</p>
+              <dl>
+                <div><dt>For</dt><dd>Households and small offices relocating within Accra.</dd></div>
+                <div><dt>How it would earn</dt><dd>A quoted price per move by size of the move, distance and helpers needed, paid to Dropping before the crew is paid.</dd></div>
+                <div><dt>Price</dt><dd>Not set. A quote would be shown before you confirm.</dd></div>
+              </dl>
+              <p class="small muted">Needs vehicle, insurance, crew checks and a damage-claims policy before launch. No date is set.</p>
+              <a class="btn btn-outline" href="#contact" data-interest="moving">Tell us you are interested</a>
+            </li>
+            <li class="model">
+              <div class="model-head"><span class="tag soon">Building</span><h3>Business accounts</h3></div>
+              <p>Statements and recurring logistics for businesses that send often.</p>
+              <dl>
+                <div><dt>For</dt><dd>Businesses with regular deliveries.</dd></div>
+                <div><dt>How it earns</dt><dd>The same per-delivery prices, with a statement you can download. Invoice payment is available only to businesses we approve.</dd></div>
+                <div><dt>Price</dt><dd>The same as deliveries. No account fee is set.</dd></div>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Coverage -->
+      <section class="section alt" id="coverage" aria-labelledby="cov-h">
+        <div class="wrap">
+          <h2 id="cov-h">Where we deliver</h2>
+          <p class="section-lead">The pilot covers these areas of Accra. Check yours:</p>
+          <label class="search"><span class="sr">Search for an area</span><input id="area-q" type="search" placeholder="Type an area, e.g. Osu" autocomplete="off" /></label>
+          <ul class="areas" id="areas" aria-live="polite"></ul>
+          <p class="small muted" id="area-msg"></p>
+        </div>
+      </section>
+
+      <!-- Pricing + promises -->
+      <section class="section" aria-labelledby="terms-h">
+        <div class="wrap two">
+          <div>
+            <h2 id="terms-h">Plain pricing</h2>
+            <table class="table">
+              <caption class="sr">Starting prices by parcel size</caption>
+              <thead><tr><th scope="col">Parcel</th><th scope="col">Starts at</th></tr></thead>
+              <tbody id="rates"></tbody>
+            </table>
+            <p class="small muted" id="rate-note"></p>
+          </div>
+          <div>
+            <h2>What to know</h2>
+            <ul class="ticks">
+              <li>Free to cancel until a courier is assigned; <span data-cancel-fee>GH₵ 5</span> after that.</li>
+              <li>You see the full price before you confirm.</li>
+              <li>Delivery times are estimates, not guarantees.</li>
+              <li>No cash on delivery in the pilot.</li>
+              <li>Some items cannot be sent, such as hazardous or illegal goods.</li>
+            </ul>
+            <p class="small"><a href="refunds.html">Read the refund policy</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Couriers -->
+      <section class="section dark" id="couriers" aria-labelledby="cour-h">
+        <div class="wrap two">
+          <div>
+            <h2 id="cour-h">Deliver with Dropping</h2>
+            <p class="lead-dark">Couriers see the area first and the full address once they accept a job. Pay is held by Dropping and released when the delivery is complete and the business has paid. Redeem your earnings to Mobile Money from the app.</p>
+            <a class="btn btn-cta" href="#contact" data-who="courier">Apply to deliver</a>
+          </div>
+          <ul class="ticks on-dark">
+            <li>You share your location only while on a job.</li>
+            <li>Redeem to MTN, Telecel or AirtelTigo Mobile Money.</li>
+            <li>A problem report holds the payout while we look into it.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq" aria-labelledby="faq-h">
+        <div class="wrap narrow">
+          <h2 id="faq-h">Questions</h2>
+          <details><summary>Is Dropping available everywhere in Ghana?</summary><p>No. The pilot covers selected areas of Accra only. See the list above.</p></details>
+          <details><summary>How fast is delivery?</summary><p>It is a same-day service. Book before the cutoff and pick a pickup window. Times shown are estimates and not guaranteed.</p></details>
+          <details><summary>How do I pay?</summary><p>With Mobile Money, a card, a bank transfer, or a business invoice where we have approved it. All payments are made to Dropping.</p></details>
+          <details><summary>What if a parcel is lost or damaged?</summary><p>Report it from your order or the tracking link. We open a support case with a named owner. The compensation limit is set out in our claims policy.</p></details>
+          <details><summary>What data do you collect?</summary><p>Only what a delivery needs. This website uses no cookies, analytics or advertising trackers. See the <a href="privacy.html">Privacy policy</a>.</p></details>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section alt" id="contact" aria-labelledby="contact-h">
+        <div class="wrap two">
+          <div>
+            <h2 id="contact-h">Register with Dropping</h2>
+            <p>Tell us who you are and we will contact you to set up your account. We verify every business and courier before they can book or take jobs.</p>
+            <p class="small">Prefer to talk? Call <strong data-phone>030 000 0000</strong> (placeholder number).</p>
+          </div>
+          <form id="contact-form" class="calc-form" novalidate>
+            <fieldset class="interests">
+              <legend>I am registering as</legend>
+              <label class="check"><input type="radio" name="who" value="business" id="who-business" checked /><span>A business that sends parcels</span></label>
+              <label class="check"><input type="radio" name="who" value="courier" id="who-courier" /><span>A courier who wants to deliver</span></label>
+            </fieldset>
+            <div class="fld"><label for="biz" id="biz-label">Business name</label><input id="biz" name="biz" autocomplete="organization" required /></div>
+            <div class="fld"><label for="person" id="person-label">Contact person</label><input id="person" name="person" autocomplete="name" required /></div>
+            <div class="fld"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required /></div>
+            <fieldset class="interests interests-biz">
+              <legend>Also interested in (optional)</legend>
+              <label class="check"><input type="checkbox" name="interest" value="Food" id="int-food" /><span>Food delivery, when available</span></label>
+              <label class="check"><input type="checkbox" name="interest" value="Rides" id="int-rides" /><span>Rides, when available</span></label>
+              <label class="check"><input type="checkbox" name="interest" value="Cargo" id="int-cargo" /><span>Cargo, when available</span></label>
+              <label class="check"><input type="checkbox" name="interest" value="Moving" id="int-moving" /><span>Moving, when available</span></label>
+            </fieldset>
+            <label class="check"><input type="checkbox" id="adult" /><span>I am 18 or over and allowed to act for this business.</span></label>
+            <p class="small muted">Pressing the button opens your email app with these details so you can send them to us. This website does not store them. <a href="privacy.html">Privacy policy</a></p>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+            <button class="btn btn-cta btn-block" type="submit">Email us these details</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap foot">
+        <div>
+          <img class="foot-logo" src="assets/logo.png" width="220" height="51" alt="Dropping: Move People. Move Business." />
+        </div>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy policy</a>
+          <a href="terms.html">Terms of service</a>
+          <a href="refunds.html">Refund policy</a>
+          <a href="cookies.html">Cookie policy</a>
+        </nav>
+        <p class="small">© <span id="year">2026</span> Dropping. Draft pilot website. This website sets no cookies.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
